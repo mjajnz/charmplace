@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Charmplace - ABOUT</title>
+  <link rel="stylesheet" href="/css/gallery.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Charmplace - GALLERY</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-  <link rel="stylesheet" href="./css/about.css">
   <script src="./script/script.js" defer></script>
   <script src="./script/bootstrap.bundle.min.js" defer></script>
   <link rel="shortcut icon" href="./img/logo/logo.png" type="image/png" />
@@ -38,24 +38,34 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false" title="Thư viện">GALLERY</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="./ho-chi-minh.html">Ho Chi Minh</a></li>
-                <li><a class="dropdown-item" href="./ha-noi.html">Ha Noi</a></li>
-                <li><a class="dropdown-item" href="./hoi-an.html">Hoi An</a></li>
-                <li><a class="dropdown-item" href="./ha-long-bay.html">Ha Long Bay</a></li>
-                <li><a class="dropdown-item" href="./da-lat.html">Da Lat</a></li>
+                <li>
+                  <a class="dropdown-item" href="ho-chi-minh.html">Ho Chi Minh</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ha-noi.html">Ha Noi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="hoi-an.html">Hoi An</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ha-long-bay.html">Ha Long Bay</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="da-lat.html">Da Lat</a>
+                </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./all.html">ALL...</a>
+                  <a class="dropdown-item" href="all.html">ALL...</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="blog.html" title="Blog">BLOG</a>
+              <a class="nav-link active" href="#" title="Blog">BLOG</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="contact-us.html" title="Liên hệ chúng tôi">CONTACT US</a>
+              <a class="nav-link active" href="#" title="Liên hệ chúng tôi">CONTACT US</a>
             </li>
           </ul>
           <button type="button" class="btn btn-outline-light text-dark me-4" data-bs-toggle="modal"
@@ -76,13 +86,15 @@
                   <div class="h-custom">
                     <div class="row d-flex justify-content-center align-items-center h-100">
                       <div class="col-md-9 col-lg-6 col-xl-5">
-                        <img src="./img/logo/logo.png" class="img-fluid" alt="Sample image">
+                        <img src="./img/logo/logo.png" class="w-100" alt="Sample image" />
                       </div>
                       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
                         <form>
                           <div
                             class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                            <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+                            <p class="lead fw-normal mb-0 me-3">
+                              Sign in with
+                            </p>
                             <button type="button" class="btn btn-primary btn-floating mx-1">
                               <i class="fab fa-facebook-f"></i>
                             </button>
@@ -123,10 +135,16 @@
                             <a href="#!" class="text-body">Forgot password?</a>
                           </div>
                           <div class="text-center text-lg-start mt-4 pt-2">
-                            <button type="button" class="btn btn-primary btn-lg"
-                              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="register.html"
-                                class="link-danger">Register</a></p>
+                            <button type="button" class="btn btn-primary btn-lg" style="
+                                  padding-left: 2.5rem;
+                                  padding-right: 2.5rem;
+                                ">
+                              Login
+                            </button>
+                            <p class="small fw-bold mt-2 pt-1 mb-0">
+                              Don't have an account?
+                              <a href="register.html" class="link-danger">Register</a>
+                            </p>
                           </div>
                         </form>
                       </div>
@@ -136,82 +154,123 @@
 
                 <!-- Modal footer -->
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                    Close
+                  </button>
                 </div>
-
               </div>
             </div>
           </div>
           <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-danger" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-danger" type="submit">
+              Search
+            </button>
           </form>
         </div>
       </nav>
+      <div id="back-to-top">
+        <button onclick="topFunction()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+          </svg>
+        </button>
+      </div>
     </header>
-    <div id="back-to-top">
-      <button onclick="topFunction()"><svg xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-          <path
-            d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
-        </svg></button>
-    </div>
-    <section class="about__banner">
-      <img src="./img/page_about_banner.jpg" alt="banner" />
-    </section>
   </div>
-  <section class="page__about">
-    <div class="container">
-      <h2 class="mb-4 mt-5">About Us</h2>
-      <p>
-        Charmplace is a new brand in the online hotel booking industry. Our mission is to provide customers with a
-        seamless and memorable booking experience, and we are confident that we will become a trusted partner of
-        travelers around the world.</p>
-      <p>Founded in May 2023 by a group of travel enthusiasts and experts, Charmplace is committed to improving the
-        hotel booking experience for customers through technology and professional services. We strive to become one of
-        the leading companies in the hotel booking industry, and we promise to continuously innovate and improve to meet
-        the needs of our customers.</p>
-      <p>At Charmplace, we understand that finding the right accommodation is an important part of any trip. That's why
-        we offer a wide selection of hotels, resorts, apartments, and more, to suit every budget and preference. Our
-        user-friendly platform allows customers to easily search for and book their desired accommodation with just a
-        few clicks. We also offer personalized recommendations based on your travel preferences and past bookings,
-        ensuring that you find the perfect place to stay every time.</p>
-      <p>In addition to our booking services, Charmplace also provides 24/7 customer support to assist with any
-        questions or concerns you may have. We strive to provide the best possible customer service, and our team is
-        always ready to go above and beyond to ensure your satisfaction.</p>
-      <p>At Charmplace, we believe that travel should be a source of joy and inspiration, and we are dedicated to making
-        your travel experiences as smooth and memorable as possible. Join us on this exciting journey, and let
-        Charmplace be your trusted companion in your travels.</p>
-    </div>
-  </section>
-  <section class="world__map mt-5">
-    <div class="container-fluid">
-      <div class="static_content">
-        <div class="static_content-section">
-          <p>Charmplace B.V. is based in Amsterdam in the Netherlands, and is supported internationally by 198 offices
-            in over 70 countries around the world: Accra - Amman - Amsterdam - Antalya - Athens - Atlanta - Auckland -
-            Bangalore - Bangkok - Barcelona - Beijing - Berlin - Bilbao - Bogotá - Bolzano - Bordeaux - Boston -
-            Bratislava - Brisbane - Bristol - Brussels - Bucharest - Budapest - Buenos Aires - Cairo - Calgary -
-            Cambridge - Cancún - Cape Town - Casablanca - Catania - Chengdu - Chicago - Colombo - Copenhagen - Dallas -
-            Denver - Dubai - Dublin - Dubrovnik - Dusseldorf - Edinburgh - Faro - Florence - Frankfurt am Main -
-            Freiburg im Breisgau - Fukuoka - Grand Rapids - Guadalajara - Guangzhou - Haikou - Hamburg - Hanoi -
-            Helsinki - Heraklion - Ho Chi Minh City - Hong Kong - Honolulu - Houston - Innsbruck - Istanbul - İzmir -
-            Jakarta - Jeddah - Jeju - Johannesburg - Kiev - Koh Samui - Krakow - Kuala Lumpur - Kuta (Bali) - Las Palmas
-            de Gran Canaria - Las Vegas - Lille - Lima - Limassol - Lisbon - Ljubljana - London - Los Angeles - Lyon -
-            Madrid - Málaga - Manchester - Manila - Marrakech - Melbourne - Mexico City - Miami - Milan - Montpellier -
-            Montréal - Moscow - Mumbai - Munich - Naha - Nairobi - Natal - New Delhi - New Orleans - New York - Nice -
-            Norwalk - Orlando - Osaka - Oslo - Palma de Mallorca - Panama City - Paris - Phoenix - Phuket - Porto Alegre
-            - Prague - Qingdao - Rennes - Reykjavík - Riga - Rimini - Rio de Janeiro - Rome - Saint Petersburg -
-            Sallanches - Salzburg - San Diego - San Francisco - San Jose - San Juan - Santiago - Santo Domingo - São
-            Paulo - Sapporo - Seattle - Seoul - Seville - Shanghai - Siem Reap - Singapore - Sochi - Sofia - Sorrento -
-            Split - Stockholm - Strasbourg - Sydney - Taipei - Tallinn - Tbilisi - Tel Aviv - Thessaloníki - Tokyo -
-            Toronto - Trabzon - Vancouver - Venice - Verona - Vienna - Vilnius - Warsaw - Washington - Xi'an - Yangon -
-            Yogyakarta - Zagreb - Zurich</p>
-          <p>Charmplace B.V. is registered with the trade register of the Chamber of Commerce in Rotterdam, the Netherlands, under registration number 45829873. Our company was founded in Paris, France, in June 2023. Our VAT registration number is FR57392753491, and we are also registered with the French Data Protection Authority under registration number 723865.</p>
+  <section class="explorer__vietnam mt-3 pt-5 text-center">
+    <h1>Explore Vietnam</h1>
+    <div class="container mt-3">
+      <!-- Carousel -->
+      <div id="VN-img" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#VN-img" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#VN-img" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#VN-img" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#VN-img" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#VN-img" data-bs-slide-to="4"></button>
         </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./img/gallery/slide/hcm.jpg" alt="Ho Chi Minh city" class="d-block w-100" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Ho Chi Minh city</h3>
+              <p>
+                Ho Chi Minh City, also known as Saigon, is a bustling
+                metropolis in southern Vietnam. The city is known for its
+                historic landmarks, vibrant street life, and delicious
+                cuisine, making it a popular destination for tourists from all
+                over the world.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./img/gallery/slide/hoian.jpg" alt="Hoi An" class="d-block w-100" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Hoi An</h3>
+              <p>
+                Hoi An is a picturesque ancient town in central Vietnam,
+                renowned for its well-preserved architecture, cultural
+                heritage, and colorful atmosphere.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/gallery/slide/hanoi.jpg" alt="Ha Noi" class="d-block w-100" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Ha Noi</h3>
+              <p>
+                Hanoi is the capital city of Vietnam, known for its rich
+                history, cultural heritage, and vibrant street food scene.
+                Visitors can explore ancient temples and museums, take a
+                stroll around Hoan Kiem Lake, or sample delicious local dishes
+                such as Pho and Bun Cha.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/gallery/slide/halong.jpg" alt="Ha Long Bay" class="d-block w-100" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Ha Long Bay</h3>
+              <p>
+                Halong Bay is a stunning natural wonder located in
+                northeastern Vietnam. Known for its emerald waters, towering
+                limestone cliffs, and picturesque islands, Halong Bay is a
+                popular destination for cruising, kayaking, and exploring the
+                natural beauty of Vietnam.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/gallery/slide/dalat.jpg" alt="Da Lat" class="d-block w-100" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Da Lat</h3>
+              <p>
+                Dalat is a picturesque city located in the central highlands
+                of Vietnam. Known for its temperate climate, beautiful
+                landscapes, and French colonial architecture, Dalat is a
+                popular destination for both domestic and international
+                tourists. Visitors can explore scenic waterfalls, visit
+                historic landmarks, or simply relax and enjoy the tranquil
+                atmosphere of this charming city.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#VN-img" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#VN-img" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </div>
-
   </section>
   <div class="container-fluid">
     <footer>

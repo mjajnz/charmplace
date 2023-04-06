@@ -48,12 +48,12 @@ body {
 }
 footer {
   width: 100%;
-  padding: 30px;
-  margin: 0 auto;
+  padding: 30px 40px 15px 40px;
+  margin: 10px auto 0 auto;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: rgba(187, 177, 177, 0.588);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 footer a {
   color: black;
@@ -112,7 +112,7 @@ header img {
 
 .navbar ul li {
   list-style: none;
-  padding: 10px;
+  padding: 5px;
 }
 
 .logo img {
@@ -122,14 +122,15 @@ header img {
 .navbar .nav-link {
   color: black;
   margin: 0 2px !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-right: 15px !important;
 }
 .navbar .nav-link:hover {
   text-decoration: none;
   color: red;
   font-weight: 400;
-  padding-bottom: 3px !important;
+  padding-bottom: 2px !important;
   border-bottom: 2px solid red;
   display: block;
 }
@@ -140,7 +141,10 @@ header img {
 .dropdown-menu .dropdown-item:hover {
   color: red;
 }
-
+.navbar .dropdown-divider {
+  padding: 0 10px !important;
+  margin: 0 !important;
+}
 .navbar ul li a:active {
   transform: scale(0.9);
   transition: all 0.2s ease-in-out;
@@ -355,13 +359,13 @@ i#next {
   width: 100%;
   overflow: hidden;
 }
-.image-container .carousel {
+.image-container .slide-home {
   display: flex;
   height: 100%;
   width: 100%;
   transition: all 0.4s ease;
 }
-.carousel img {
+.slide-home img {
   height: 100%;
   width: 100%;
   border-radius: 18px;
@@ -369,11 +373,39 @@ i#next {
   object-fit: cover;
 }
 
-/* trang about */
-
-.about__banner img {
-  width: 100%;
+/* back top top */
+#back-to-top {
+  position: fixed;
+  display: block;
+  bottom: 50px;
+  right: 10px;
+  z-index: 2;
 }
+
+#back-to-top button {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: rgb(240, 231, 221);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+#back-to-top button svg {
+  width: 15px;
+  height: 20px;
+}
+
+#back-to-top button:hover {
+  background-color: red;
+  color: white;
+  outline: none;
+}
+#back-to-top button:active {
+  transform: scale(0.9);
+  transition: all 0.2s;
+}
+
 @media screen and (max-width: 1180px) {
   .container h1::after,
   .container h1::before {
@@ -456,6 +488,12 @@ i#next {
     border-left: 3px solid red;
     color: #fff;
   }
+  footer {
+    flex-direction: column;
+  }
+  footer a {
+    margin: 10px 0 ;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -471,8 +509,5 @@ i#next {
   }
   .banchay {
     margin: 10px;
-  }
-  footer {
-    flex-direction: column;
   }
 }
